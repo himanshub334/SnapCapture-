@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "SnapCapture",
+    "slug": "snapcapture",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "snapcapture",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.snapcapture",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SnapCapture needs camera access to capture photos.",
+        "NSPhotoLibraryUsageDescription": "SnapCapture needs photo library access to choose images."
+      }
+    },
+    "android": {
+      "package": "com.example.snapcapture",
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "plugins": [
+      ["expo-image-picker", {
+        "photosPermission": "SnapCapture needs access to your photos."
+      }]
+    ]
+  }
+}
